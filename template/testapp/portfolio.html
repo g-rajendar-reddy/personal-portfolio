@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio Page</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"><img src="{% static 'images/logo.png' %}" class="logo" height="40vh" width="50vw"
+                        alt="GRR"></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Project</a></li>
+                    <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <a href="/" class="nav__button">Logout</a>
+                </ul>        
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am<span class="home__title-color"> GAJJELA RAJENDAR
+                        REDDY</span><br>FULL-STACK PYTHON<br> DEVELOPER</h1>
+
+                <a href="#contact" class="button">Contact</a>
+
+            </div>
+
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/g-rajendar-reddy" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+
+                <a href="https://github.com/g-rajendar-reddy" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="70" href="{% static 'images/profile.png' %}" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="{% static 'images/about.jpg' %}" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Rajendar Reddy</h2>
+                    <p class="about__text">I am a dedicated Full Stack Python Developer with expertise in Python,
+                        Django, Flask, and web technologies like HTML,
+                        CSS, Bootstrap, JavaScript, and Angular. With hands-on experience in analyzing datasets and
+                        building RESTful APIs, I
+                        bring a strong foundation in both front-end and back-end development. My proficiency in
+                        frameworks, databases (MySQL,
+                        MongoDB), and tools like Git, Docker, and AWS enables me to create scalable solutions. I'm
+                        passionate about leveraging
+                        data analysis (Numpy, Pandas, Matplotlib) to solve complex problems. Currently I searching for
+                        jobs, I have selected
+                        internships in web development, I have internship offer letter, I have course completed
+                        certification and participated
+                        in several certification programs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+
+                <div class="left">
+
+                    <!-- Python Skills -->
+                    <h3 class="skills__subtitle">PYTHON</h3>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Core Python</span>
+                        </div>
+                        <div class="skills__bar skills__python-core"></div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Advanced Python</span>
+                        </div>
+                        <div class="skills__bar skills__python-adv"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Numpy</span>
+                        </div>
+                        <div class="skills__bar skills__numpy"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Pandas</span>
+                        </div>
+                        <div class="skills__bar skills__pandas"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Matplotlib</span>
+                        </div>
+                        <div class="skills__bar skills__matplotlib"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <!-- UI Skills -->
+                    <h3 class="skills__subtitle">UI</h3>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">HTML</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Bootstrap</span>
+                        </div>
+                        <div class="skills__bar skills__bootstrap"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+                        <div class="skills__bar skills__javascript"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Angular</span>
+                        </div>
+                        <div class="skills__bar skills__angular"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <!-- Database Skills -->
+                    <h3 class="skills__subtitle">DATABASE</h3>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">MySQL</span>
+                        </div>
+                        <div class="skills__bar skills__mysql"></div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">MongoDB</span>
+                        </div>
+                        <div class="skills__bar skills__mongodb"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Frameworks Skills -->
+                    <h3 class="skills__subtitle">FRAMEWORKS</h3>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Django</span>
+                        </div>
+                        <div class="skills__bar skills__django"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Flask</span>
+                        </div>
+                        <div class="skills__bar skills__flask"></div>
+                        <div>
+                            <span class="skills__percentage">82%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">RestAPI</span>
+                        </div>
+                        <div class="skills__bar skills__restapi"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools Skills -->
+                    <h3 class="skills__subtitle">TOOLS</h3>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Git & GitHub</span>
+                        </div>
+                        <div class="skills__bar skills__git"></div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Docker</span>
+                        </div>
+                        <div class="skills__bar skills__docker"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">AWS</span>
+                        </div>
+                        <div class="skills__bar skills__aws"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <!-- Testing Skills -->
+                    <h3 class="skills__subtitle">TESTING</h3>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Unit Testing</span>
+                        </div>
+                        <div class="skills__bar skills__unit-testing"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Integration Testing</span>
+                        </div>
+                        <div class="skills__bar skills__integration-testing"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== projects =====-->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <img src="{% static 'images/project1.jpg' %}" alt="Project 1">
+                <h3>Google Play Store Data Analysis</h3>
+                <p>Analyzed a dataset of 10,000 Google Play Store apps from Kaggle to gain insights into app
+                    ratings, categories, installs, and other key metrics. Used Python libraries (NumPy, Pandas) for data
+                    manipulation and Matplotlib for visualizations to identify trends and patterns in app performance.
+                </p>
+            </div>
+            <div class="project">
+                <img src="{% static 'images/project2.jpg' %}" alt="Project 2">
+                <h3>GRR Mall Web Application</h3>
+                <p>My project consists of two roles: Admin and User.<br>
+                    Admin: Admins are authorized personnel responsible for managing the entire application. They have
+                    exclusive access to
+                    handle and oversee all functionalities.<br>
+                    User: Users can access the application to utilize its features and services as intended.<br>
+                    Note: All data is stored in their respective local storage.</p>
+                <h4>https://grr-mall.netlify.app/</h4>
+            </div>
+        </section>
+
+        <!--===== resume =====-->
+        <section id="resume">
+            <h2 class="section-title">My Resume</h2>
+            <p>Below is a preview of my resume. You can also download the PDF version by clicking the button below.</p>
+
+            <div class="resume-container">
+                <iframe src="{% static 'images/Resume.pdf' %}" width="100%" height="500px"
+                    style="border: 1px solid #e0e0e0;"></iframe>
+            </div>
+
+            <div id="btn">
+                <a href="{% static 'images/Resume.pdf' %}" download="resume.pdf" id="btn1">Download Resume</a>
+            </div>
+        </section>
+
+
+        <!--===== CONTACT =====-->
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <form method="POST" action="/contact/"  id="contactForm">
+                {% csrf_token %}
+                <input type="text" id="name" placeholder="Your Name" name="name" required>
+                <input type="email" id="email" placeholder="Your Email" name="email" required>
+                <input type="text" id="subject" placeholder="Subject" name="subject" required>
+                <textarea id="message" placeholder="Message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="form">
+            {% if messages %}
+            {% for message in messages %}
+            <p style="color: blue">{{ message }}</p>
+            {% endfor %}
+            {% endif %}
+            </div>
+        </section>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Gajjela Rajendar Reddy</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/hampy_reddy8883/profilecard/?igsh=cDI4NHFhNjI3azVv"
+                    class="footer__icon"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.facebook.com/rajendarreddy.gajjela?mibextid=ZbWKwL" class="footer__icon"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://t.me/hampy_reddy8883" class="footer__icon"><i class='bx bxl-telegram'></i></a>
+                <a href="https://x.com/hampy_reddy8883" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p class="footer__copy">&#169; Copyright. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
